@@ -36,7 +36,7 @@
 	<body>
 		<header class="banner navbar navbar-default navbar-fixed-top" role="banner">
 			<div class="top-nav container">
-				<a class="navbar-brand" href="http://explore.emergencyreporting.dev/" rel="home"><img alt="Emergency Reporting" src="./images/emergency_reporting_logo.png"></a>
+				<a class="navbar-brand" href="./" rel="home"><img alt="Emergency Reporting" src="./images/emergency_reporting_logo.png"></a>
 				<div class="pull-right">
 					<a href="https://secure.emergencyreporting.com" class="navbar-btn btn btn-theme-primary">Login</a>
 				</div>
