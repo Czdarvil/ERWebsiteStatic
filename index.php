@@ -44,7 +44,7 @@
 			<nav class="menu-container">
 				<div class="container mobile-nav-header">
 					<ul id="menu-contact-links" class="contact-menu">
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13631"><a href="http://explore.emergencyreporting.dev/contact-us/"><i class="fa fa-envelope"></i> <span class="nav-label">Contact Us</span></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13631"><a href="<?php echo $iframe_url; ?>/contact-us/"><i class="fa fa-envelope"></i> <span class="nav-label">Contact Us</span></a></li>
 						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13641"><a href="tel:18667737678"><i class="fa fa-phone"></i> <span class="nav-label">1 (866) 773-7678</span></a></li>
 					</ul>
 				</div>
