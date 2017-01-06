@@ -1,17 +1,18 @@
 <?php
 	// Get whether this is in dev mode, staging mode OR production mode
 	$domain = $_SERVER['HTTP_HOST'];
-	$iframe_url = 'www.explore.emergencyreporting.com';
+	$iframe_url = 'https://www.explore.emergencyreporting.com';
 	if( false !== strpos( $domain, '.dev' ) ):
-		$iframe_url = 'www.explore.emergencyreporting.dev';
+		$iframe_url = 'http://www.explore.emergencyreporting.dev';
 	elseif( flase !== strpos( $domain, 'staging' ) ):
-		$iframe_url = 'staging.emergencyreporting.com';
+		$iframe_url = 'https://staging.emergencyreporting.com';
 	endif;
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Home - Emergency Reporting</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="er_homepage_styles.css" />
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
