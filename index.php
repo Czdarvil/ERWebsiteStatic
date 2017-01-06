@@ -17,10 +17,21 @@
 <html>
 	<head>
 		<title>Home - Emergency Reporting</title>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="Affordable, easy to use NFIRS reporting and fire station management tools. Emergency Reporting is the first web-based solution for fire and EMS agencies."/>
+
+    	<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Emergency Reporting - The Most Trusted RMS Solution" />
+		<meta property="og:description" content="Affordable, easy to use NFIRS reporting and fire station management tools. Emergency Reporting is the first web-based solution for fire and EMS agencies." />
+		<meta property="og:url" content="https://www.emergencyreporting.com/" />
+		<meta property="og:site_name" content="Emergency Reporting" />
+
 		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="./styles/style.css" />
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<header class="banner navbar navbar-default navbar-fixed-top" role="banner">
