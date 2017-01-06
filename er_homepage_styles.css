@@ -169,14 +169,11 @@ ul {
 	display: block;
 }
 
-.mobile-nav-header a > *{
-	vertical-align: middle;
-}
-
 .mobile-nav-header a .nav-label, .mobile-nav-header button .nav-label {
 	display: inline-block;
 	margin-left: 2px;
-	height: 20px;
+	height: auto;
+	line-height: 1.5;
 }
 
 .navbar-brand {
@@ -197,6 +194,7 @@ a {
 
 .mobile-nav-header a i, .mobile-nav-header button i {
 	font-size: 18px;
+	transform: translate(0, 0);
 }
 
 .btn-theme-primary {
@@ -206,7 +204,6 @@ a {
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#961718),to(#771213));
 	background-image: linear-gradient(to bottom,#961718 0,#771213 100%);
 	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff961718',endColorstr='#ff771213',GradientType=0);
 	border-color: #4b0b0c;
 	color: white;
 	text-transform: uppercase;
@@ -227,10 +224,6 @@ a {
 	font-size: 14px;
 	line-height: 1.42857143;
 	border-radius: 4px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 }
 
 .btn-theme-primary:hover, .btn-theme-primaryfocus, .btn-theme-primary:active {
@@ -238,5 +231,4 @@ a {
 	background: #771213;
 	background-image: none;
 	color: white;
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
