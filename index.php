@@ -12,6 +12,11 @@
 		$iframe_url = 'staging.emergencyreporting.com'; // TODO: Set staging url. This may not even be necessary.
 	endif;
 	$iframe_url = $url_prefix . $iframe_url;
+	$url_params = isset( $_SERVER[ 'QUERY_STRING' ]) ? $_SERVER[ 'QUERY_STRING' ] : '';
+	// Remove all 'src' parameters and add our own.
+	$url_params = preg_replace( "/src=[^\&]+/", '', $url_params );
+	$url_params = 'src=embed&' . $url_params;
+	$url_params = str_replace( '&&', '&', $url_params );
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,8 +54,7 @@
 					</ul>
 				</div>
 		</header>
-		<!-- TODO: Pass along any $_GET args to the iframe EXCEPT "src" so as not to overwrite. -->
-		<iframe class="er-page-iframe" src="<?php echo $iframe_url; ?>?src=embed">
+		<iframe class="er-page-iframe" src="<?php echo $iframe_url . '?' . $url_params; ?>">
 		</iframe>
 	</body>
 </html>
