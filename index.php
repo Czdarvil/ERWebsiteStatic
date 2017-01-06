@@ -49,6 +49,7 @@
 					</ul>
 				</div>
 		</header>
+		<!-- TODO: Pass along any $_GET args to the iframe EXCEPT "src" so as not to overwrite. -->
 		<iframe class="er-page-iframe" src="<?php echo $iframe_url; ?>?src=embed">
 		</iframe>
 	</body>
