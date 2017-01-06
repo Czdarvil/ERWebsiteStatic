@@ -9,7 +9,7 @@
 	if( false !== strpos( $domain, '.dev' ) ):
 		$iframe_url = 'explore.emergencyreporting.dev';
 	elseif( flase !== strpos( $domain, 'staging' ) ):
-		$iframe_url = 'staging.emergencyreporting.com';
+		$iframe_url = 'staging.emergencyreporting.com'; // TODO: Set staging url. This may not even be necessary.
 	endif;
 	$iframe_url = $url_prefix . $iframe_url;
 ?>
