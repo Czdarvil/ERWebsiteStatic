@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Home - Emergency Reporting</title>
+		<title>Emergency Reporting - The Most Trusted RMS Solution</title>
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
