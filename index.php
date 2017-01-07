@@ -39,7 +39,7 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="banner navbar navbar-default navbar-fixed-top" role="banner">
+		<header id='navbar-header' class="banner navbar navbar-default navbar-fixed-top" role="banner">
 			<div class="top-nav container">
 				<a class="navbar-brand" href="./" rel="home"><img alt="Emergency Reporting" src="./images/emergency_reporting_logo.png"></a>
 				<div class="pull-right">
@@ -54,7 +54,23 @@
 					</ul>
 				</div>
 		</header>
-		<iframe class="er-page-iframe" src="<?php echo $iframe_url . '?' . $url_params; ?>">
+		<iframe id='er-page-iframe' class="er-page-iframe" src="<?php echo $iframe_url . '?' . $url_params; ?>">
 		</iframe>
+		<script type='text/javascript'>
+			// inital setting of the iframe height
+			reposition_header();
+
+			window.onresize = function() {
+				reposition_header();
+			}
+
+			function reposition_header() {
+				var window_height = window.innerHeight;
+				var styles = window.getComputedStyle(document.getElementById('navbar-header'));
+				var header_height = parseInt(styles.getPropertyValue('height'), 10);
+				document.getElementById('er-page-iframe').style.height = window_height - header_height + 'px';
+			}
+
+		</script>
 	</body>
 </html>

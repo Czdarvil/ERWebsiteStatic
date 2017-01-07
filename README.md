@@ -12,11 +12,14 @@ The rest of the page is an iframe that loads from one of three sources:
 
 Ths source is determined by the static page's URL (is it .dev or .com, and does it contain .staging)
 
-All links in the iframe are given the attribute `target="_parent"`
+The WordPress site adds a base tag.
 
-##Issues
+##Positioning Issues
 
-The bottom part of the header (the drop down) uses JavaScript for functionality, **SO** instead of loading the scripts into the page...
+To keep from having to rely on heights not changing, JavaScript is used to position the header / iframe. Here's how:
 
-* The bottom part of the header bar is loaded in the iframe.
-* The WordPress Site checks for the parameret `src='embed'`. If it is present, hide the top part of the header, add a `<base>` tag, and add padding to the dropdown (to account for no top header).
+On the static page, JS gives the iframe height equal to the height of the window - the height of the static header bar (fill  the rest of the page).
+
+In the WP site, **if** `src=embed` is present, **then** JS will set the padding of the page wrapper to be the height of the nav bar (drop down menu) - the top margin of the slider.
+
+The reason for subtracting the top margin of the slider is because it has a negative top margin. It would naturally be positioned behind the navbar if the value were ignored. 
